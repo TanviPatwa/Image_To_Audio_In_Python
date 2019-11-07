@@ -2,7 +2,7 @@ import pytesseract
 from PIL import Image
 import os 
 from gtts import gTTS 
-img = Image.open('img.jpg')
+img = Image.open('img.jpg') #Enter the Image path
 mytext = pytesseract.image_to_string(img)
 language = 'en'
 myobj = gTTS(text=mytext, lang=language, slow=False) 
